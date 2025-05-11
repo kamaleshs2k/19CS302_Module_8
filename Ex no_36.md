@@ -9,7 +9,7 @@ Saveetha
 The required output is: Hello, Saveetha! C Programming
 
 
-# EX 31 C program to to print Hello Saveetha! on a single line, and then print the already provided input string to stdout.
+# EX 37 C program to to print Hello Saveetha! on a single line, and then print the already provided input string to stdout.
 ## DATE:11/05/2025
 ## AIM:
 To write a C program to print Hello Saveetha! on a single line, and then print the already provided input string to stdout.
