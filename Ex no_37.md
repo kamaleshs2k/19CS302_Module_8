@@ -48,21 +48,21 @@ When we sum the floating-point numbers 4.0 and 2.0, we get 6.0. When we subtract
 
 
 
-# EX 31 C program to find the smallest among three numbers using Structure.
+# EX 37 C program to print the sum and difference of both integers separated by a space on the first line, and the sum and difference of both float (scaled to 1 decimal place) separated by a space on the second line.
 ## DATE:11/05/2025
 ## AIM:
-To write a C program to find the smallest among three numbers using Structure.
+To write a C program to print the sum and difference of both integers separated by a space on the first line, and the sum and difference of both float (scaled to 1 decimal place) separated by a space on the second line.
 
 ## Algorithm
-1.Start the program and define a structure with three integer fields.
+1.Start the program and declare two int and two float variables.
 
-2.Declare a structure variable to store the three numbers.
+2.Read two integers from the first line and two floats from the second line.
 
-3.Read the values of the three numbers from the user.
+3.Calculate the sum and difference of the integers.
 
-4.Compare the three numbers to find the smallest.
+4.Calculate the sum and difference of the float values.
 
-5.Display the smallest number and end the program. 
+5.Print the integer results and float results rounded to 1 decimal place.
 
 ## Program:
 ```
@@ -73,42 +73,28 @@ RegisterNumber:  212223060108
 */
 #include <stdio.h>
 
-struct Numbers
-{
-    int num1, num2, num3;
-};
-
 int main()
 {
-    struct Numbers n;
+    int a, b;
+    float x, y;
 
-    printf("Enter three numbers: ");
-    scanf("%d %d %d", &n.num1, &n.num2, &n.num3);
+    scanf("%d %d", &a, &b);
+    scanf("%f %f", &x, &y);
 
-    int smallest = n.num1;
-
-    if(n.num2 < smallest)
-    {
-        smallest = n.num2;
-    }
-
-    if(n.num3 < smallest)
-    {
-        smallest = n.num3;
-    }
-
-    printf("The smallest number is: %d\n", smallest);
+    printf("%d %d\n", a + b, a - b);
+    printf("%.1f %.1f\n", x + y, x - y);
 
     return 0;
 }
+
 
 
 ```
 
 ## Output:
 
-![image](https://github.com/user-attachments/assets/d887c1cc-83cb-4eee-aa33-50eed14d157c)
+![image](https://github.com/user-attachments/assets/4b828d4d-1dd1-4721-8793-f5c61da1d5b2)
 
 
 ## Result:
-Thus the program was executed and the output was verified successfully.![Uploading image.png…]()
+Thus the program was executed and the output was verified successfully.
